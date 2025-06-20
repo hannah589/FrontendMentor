@@ -63,7 +63,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   }
   ```
 
-- Position & z-index
+- Position & z-index:
   Position and z-index were used to overlap and stack elements.
 
   The background container has position: relative, ensuring it stays in its normal position. Within this container, the .bg-pattern elements are positioned using position: absolute. This allows them to be precisely placed, with parts of their full circular shapes overflowing and being hidden at the corners of the container.
