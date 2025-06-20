@@ -8,7 +8,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -24,12 +23,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Screenshot
 
 ![](./Screenshot.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 
 ## My process
 ### Built with
@@ -80,19 +73,19 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   To place the profile image halfway on top of the div named '.one', I created another div element inside div .two. Both divs, one and two, maintained their relative position, staying in their normal position. A negative top position on '.two div' to achieve the profile image desired overlap.
 
  ```css
-.one{
-  position: relative;
-}
-
-.two{
-  position: relative;
-}
-
-.two div{
-  position: absolute;
-  top: -64px;
-}
-```
+  .one{
+    position: relative;
+  }
+  
+  .two{
+    position: relative;
+  }
+  
+  .two div{
+    position: absolute;
+    top: -64px;
+  }
+  ```
 
 - Media Query:
   I adopted a mobile-first workflow, initially designing for a 600px mobile browser window. The layout was then adjusted for an 800px breakpoint, ensuring a smooth, subtle transition to the desktop view.
