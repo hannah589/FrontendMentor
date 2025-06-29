@@ -88,7 +88,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
     ```
 
 - Media Query:
-  I adopted a mobile-first workflow, initially designing for a 600px mobile browser window. The layout was then adjusted for an 800px breakpoint, ensuring a smooth, subtle transition to the desktop view.
+  I adopted a mobile-first workflow, initially designing for a 375px mobile browser window. The layout was then adjusted for an 800px breakpoint, ensuring a smooth, subtle transition to the desktop view.
 
   ```css
    @media (max-width: 800px) {
