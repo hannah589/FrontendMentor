@@ -19,48 +19,51 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: relative;
   background-color: var(--light-blue);
+  z-index: -1;
+}
+
+h1, h3{
+  color: var(--dark-blue);
 }
 
 h1{
-  color: var(--dark-blue);
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 24px;
+  line-height: 30px;
+  margin-bottom: 16px;
 }
  
 p{
   color: var(--gray-blue);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 22px;
+  
 }
 
 .card{
   display: flex;
   border-radius: 8px; 
   overflow: hidden;
-  width: 50%;
-  display: relative;
+  width: 48%;
   z-index: 0;
 }
 
 .img-container{
    overflow: hidden;
-   width: 600px;
+   width: 700px;
 }
 
 .img-container img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .right{
-  padding: 24px;
   background-color: white;
-  
 }
 
 .right .container{
@@ -69,17 +72,24 @@ p{
   gap: 24px;
 }
 
+.text-container{
+  padding: 38px 32px 14px 32px;
+}
+
 .right{
  display: flex;
  flex-direction: column;
  gap: 22px;
 }
 
+/*
+
 /*avatar*/
-.avatar-section{
+.btn-section{
   display: flex;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
+  padding: 18px 30px;
 }
 
 .profile-card{
@@ -89,8 +99,8 @@ p{
 .avatar-img-container{
   border-radius: 100%;
   overflow: hidden;
-  height: 48px;
-  margin-right: 12px;
+  height: 44px;
+  margin-right: 16px;
 }
 
 .avatar-img-container img{
@@ -99,21 +109,19 @@ p{
   object-fit: fill;
 }
 
-.sharebtn-container{
+.btn-container{
   display: flex;
   align-items: center;
-  position: relative;
-  z-index: 0;
 }
 
-.sharebtn{
+button{
   border-radius: 100%;
-  height: 32px;
-  width: 32px;
+  background-color: var(--light-blue);
+  color: white;
+  padding: 12px;
   border: none;
   cursor: pointer;
-  position: relative;
-  z-index: 0;
+  transition: 400ms;
 }
 
 /*Social*/
@@ -124,15 +132,24 @@ p{
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: -50px;
-  z-index: 1;
+  right: 330px;
+  top: 355px;
 }
 
-#social-container{
+
+.mobile-share div{
+  display: flex;
+  gap: 20px;
+  padding-left: 2px;
+}
+
+#mobile-share-content{
+  position: absolute;
+  display:none;
+}
+  #social-container{
   display: none;
 }
-  
-
 
 .social-container div{
   display: flex;
@@ -142,17 +159,17 @@ p{
 .social{
  background-color: var(--dark-blue);
  justify-content: space-between;
- gap: 12px;
+ display: flex;
+ gap: 14px;
  padding: 12px 32px;
  border-radius: 8px;
-
 }
 
 span{
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
+  font-weight: 600;
   color: var(--desaturated-blue);
-  font-weight: 300;
 }
 
 .triangle-down {
@@ -183,7 +200,7 @@ span{
   .card{
     display: flex;
     flex-direction: column;
-    width: 440px;
+    width: 380px;
     height: 80%;
   }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -32,7 +32,7 @@
       <div class="right">
 
         <div class="container">
-          <div>
+          <div class="text-container">
             <h1>
               Shift the overall look and feel by adding these wonderful touches to furniture in your home
             </h1>
@@ -46,8 +46,19 @@
 
         
 
-          <div class="avatar-section">
-            <div class="profile-card">
+          <div class="btn-section" id="btn-section">
+                <div class="mobile-share" id="mobile-share-content">
+                  <div>
+                    <span>Share</span>
+                    <img src="images\icon-facebook.svg" alt="facebook"/>
+                    <img src="images\icon-twitter.svg" alt="twitter"/>
+                    <img src="images\icon-pinterest.svg" alt="pinterest"/>
+                  </div>
+                </div>
+            
+
+            
+            <div class="profile-card" id="profileCard">
               <div class="avatar-img-container">
                 <img src="images\avatar-michelle.jpg" alt="avatar-michelle" />
               </div>
@@ -58,31 +69,36 @@
               </div>
             </div>
 
-            <div class="sharebtn-container">
-              <button class="sharebtn" id="sharebtn">
-                <img src="images\icon-share.svg" alt="icon share button">
-              </button>
             
 
-                    <div id="social-container" class="social-container">
-                      <div class="social">
-                        <span>Share</span>
-                        <img src="images\icon-facebook.svg" alt="facebook"/>
-                        <img src="images\icon-twitter.svg" alt="twitter"/>
-                        <img src="images\icon-pinterest.svg" alt="pinterest"/>
-                      </div>
-                      <div class="triangle-down-container">
-                        <div class="triangle-down"></div>
-                      </div>
-                    </div>
+            <div class="btn-container">
+              <button onclick="toggle()" class="sharebtn" id="btn">
+                <img src="images\icon-share.svg" alt="icon share button">
 
+                <div id="social-container" class="social-container">
+                  <div class="social">
+                    <span>Share</span>
+                    <img src="images\icon-facebook.svg" alt="facebook"/>
+                    <img src="images\icon-twitter.svg" alt="twitter"/>
+                    <img src="images\icon-pinterest.svg" alt="pinterest"/>
+                  </div>
+                  <div class="triangle-down-container">
+                    <div class="triangle-down"></div>
+                  </div>
+                </div>
+
+              
+              </button>
           </div>
+
+
+                
+   
 
         </div>
       </div>
     </div>
-      
-    
+
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
